@@ -2,13 +2,15 @@ import * as React from 'react'
 
 
 export type NavLinkProps = {
-
+    title: string
+    href: string
 }
 
-const NavLink: React.FunctionComponent<NavLinkProps> = (_: NavLinkProps) => {
+//TODO: Use React Router for links
+const NavLink: React.FunctionComponent<NavLinkProps> = (props: NavLinkProps) => {
     return (
         <li className="nav-item d-none d-sm-inline-block">
-            <a href="index3.html" className="nav-link">Home</a>
+            <a href={props.href} className="nav-link">{props.title}</a>
         </li>
     )
 }

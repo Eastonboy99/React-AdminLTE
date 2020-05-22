@@ -12,3 +12,4 @@ export { default as SidebarMenu } from './Nav/SidebarMenu'
 // Content Components
 export { default as ContentWrapper } from './Content/ContentWrapper'
 export { default as ContentHeader } from './Content/ContentHeader'
+export { default as ContentFooter } from './Content/ContentFooter'

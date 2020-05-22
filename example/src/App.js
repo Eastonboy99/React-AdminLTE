@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import 'admin-lte/dist/css/adminlte.min.css'
-import { Container, MainHeader, Nav, NavLink, SideBarToggle, MainSidebar, UserPanel, SidebarMenu, MenuItem, ContentWrapper, ContentHeader } from 'react-admin-lte'
+import { Container, MainHeader, Nav, NavLink, SideBarToggle, MainSidebar, UserPanel, SidebarMenu, MenuItem, ContentWrapper, ContentHeader, ContentFooter } from 'react-admin-lte'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTachometerAlt, faTh } from '@fortawesome/free-solid-svg-icons'
@@ -49,8 +49,11 @@ export default class App extends Component {
           <SidebarMenu menu={menu} />
         </MainSidebar>
         <ContentWrapper>
-            <ContentHeader name="Starter Page" /> 
-          </ContentWrapper>
+          <ContentHeader name="Starter Page" />
+        </ContentWrapper>
+        <ContentFooter copyright={<React.Fragment><strong>Copyright &copy; 2014-2019 <a href="https://adminlte.io">AdminLTE.io</a>.</strong> All rights reserved.</React.Fragment>}>
+          Anything you want
+        </ContentFooter>
       </Container>
     )
   }

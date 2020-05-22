@@ -4,6 +4,7 @@ type MenuSubItem = {
     icon?: React.ReactElement,
     LinkComponent?: React.ElementType,
     useExact?: boolean,
+    active?: boolean
 };
 
 export default MenuSubItem

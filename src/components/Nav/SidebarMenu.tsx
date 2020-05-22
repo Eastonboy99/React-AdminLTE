@@ -35,7 +35,7 @@ const SidebarMenu: React.FunctionComponent<SidebarMenuProps> = (props: SidebarMe
                             <ul className="nav nav-treeview">
                                 {menuItem.subItems.map((subMenuItem: MenuSubItem, subMenuIndex: number) => (
                                     <li key={`submenu-${subMenuIndex}`} className="nav-item">
-                                        <a href={(subMenuItem.to) ? subMenuItem.to : "#"} className="nav-link">
+                                        <a href={(subMenuItem.to) ? subMenuItem.to : "#"} className={`nav-link ${(subMenuItem.active) ? "active" : ""}`}>
                                             {(subMenuItem.icon) ? React.cloneElement(subMenuItem.icon, {
                                                 key: subMenuIndex,
                                                 className: "nav-icon"
